@@ -734,7 +734,6 @@ bgSave.addEventListener('click', async () => {
     await upload('background/current', pendingBgFile, {
       access: 'public',
       handleUploadUrl: '/api/background-upload',
-      allowOverwrite: true,
     });
     closeBgModal();
     await loadBackground();
